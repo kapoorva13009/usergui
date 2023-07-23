@@ -1,1 +1,7 @@
-helo`
+- name: create users
+  hosts: all
+  tasks:
+    - name: user
+      user:
+        name: sun
+        state: present
